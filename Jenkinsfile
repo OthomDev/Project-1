@@ -12,4 +12,9 @@ pipeline {
             }
         }
     }
+    stage('create Docker image') {
+            steps {
+                echo "building docker image "
+                sh "sudo docker build -t project-1 ."
+            }
 }
