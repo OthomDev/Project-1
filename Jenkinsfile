@@ -16,5 +16,10 @@ pipeline {
                 sh "docker build -t project-1 ."
             }
        }
+        stage('run Docker Image') {
+            steps {
+                sh "docker run -d -p 5000:5000 project-1 "
+            }
+       }
     }
 }
