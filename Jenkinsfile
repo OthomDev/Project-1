@@ -18,7 +18,7 @@ pipeline {
        }
         stage('run Docker Image') {
             steps {
-                sh "docker run -d -p 8096:5000 project-1 "
+                sh "docker run -d -p 5000:5000 project-1 "
             }
        }
     }
