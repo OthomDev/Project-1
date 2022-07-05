@@ -1,4 +1,4 @@
-# CI With Jenkins, Python, Docker
+# CI With Jenkins, Python, Docker.
 
 - Python 3x
 - Docker, DockerHub account
