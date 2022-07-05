@@ -8,7 +8,7 @@ pipeline {
                 sh "pip3 install -r requirements.txt"
                 
                 // Run pytest
-                sh "python3 -m pytest app-test.py"
+                sh "python pytest app-test.py"
             }
         }
     }
