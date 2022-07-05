@@ -11,10 +11,10 @@ pipeline {
                 sh "python3 -m pytest app_test.py"
             }
         }
-    }
-    stage('create Docker image') {
+        stage('create Docker image') {
             steps {
                 sh "sudo docker build -t project-1 ."
             }
+       }
     }
 }
