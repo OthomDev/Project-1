@@ -5,10 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 // Run pip install
-                sh "pip3 install -r requirements.txt"
+                sh "pip install -r requirements.txt"
                 
                 // Run pytest
-                sh "python pytest app-test.py"
+                sh "python3 pytest app-test.py"
             }
         }
     }
