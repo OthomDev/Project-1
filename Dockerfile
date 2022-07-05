@@ -5,3 +5,4 @@ ADD . /python-flask
 WORKDIR /python-flask
 RUN pip install -r requirements.txt
 CMD [ "python", "./myapp.py" ]
+EXPOSE 5000
