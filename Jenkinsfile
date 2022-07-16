@@ -11,6 +11,9 @@ pipeline {
                 sh "python3 -m pytest app_test.py"
             }
         }
+        environment {
+        registry = "public.ecr.aws/x8y9i5i2/my-project-repo"
+    }
         stage('create Docker image') {
             steps {
                 sh "docker build -t project-1 ."
